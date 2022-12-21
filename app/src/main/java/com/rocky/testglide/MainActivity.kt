@@ -29,5 +29,8 @@ class MainActivity : AppCompatActivity() {
             .load("https://imagedelivery.net/2chPAg1PDekJ6oI478IB9Q/160c3c36-bce5-4ce4-9b4a-61330b56bb00/public")
             .into(iv)
 
+
+
+
     }
 }
