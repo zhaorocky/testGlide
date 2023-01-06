@@ -42,10 +42,10 @@ jobs:
           app/build/outputs/bundle/release/app-release.aab ${{ secrets.ALIAS }}
 
     #   STEP 2 : Upload the Artifact
-    upload:
-      needs: [ build ]
-      name: Upload the signed artifact
-      runs-on: self-hosted
+#    upload:
+#      needs: [ build ]
+#      name: Upload the signed artifact
+#      runs-on: self-hosted
       steps:
         - name: Upload Bundle
           uses: actions/upload-artifact@v2
