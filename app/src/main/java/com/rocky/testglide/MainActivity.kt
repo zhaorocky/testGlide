@@ -12,7 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        /**
+         * test
+         */
 
         val iv = findViewById<ImageView>(R.id.iv)
         val rv = findViewById<RecyclerView>(R.id.rv)
