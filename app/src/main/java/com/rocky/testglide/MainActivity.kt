@@ -1,11 +1,18 @@
 package com.rocky.testglide
 
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.widget.ImageView
+import androidx.annotation.Nullable
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.GlideException
+import com.bumptech.glide.request.RequestListener
+import com.bumptech.glide.request.target.Target
+import javax.sql.DataSource
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +34,7 @@ class MainActivity : AppCompatActivity() {
         rv2.adapter = RvAdapter2(this)
         Glide.with(this)
             .load("https://imagedelivery.net/2chPAg1PDekJ6oI478IB9Q/160c3c36-bce5-4ce4-9b4a-61330b56bb00/public")
+            .thumbnail(Glide.with(this).load(R.drawable.myloading))
             .into(iv)
-
-
-
-
     }
 }
